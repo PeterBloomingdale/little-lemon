@@ -1,0 +1,20 @@
+.custom-btn {
+    width: 200px;
+    height: 50px;
+    background-color: #F4CE14;
+    border-radius: 20px;
+    border: none;
+    font-size: 16px; /* Adjust as needed */
+    font-weight: bold; /* Adjust as needed */
+    color: #000; /* Adjust as needed */
+    cursor: pointer;
+    outline: none;
+    text-align: center;
+    line-height: 50px; /* This helps in vertically centering the text */
+    transition: 0.3s ease-in-out; /* Optional: For smooth hover effects */
+
+    /* Hover effect */
+    &:hover {
+        opacity: 0.9; /* This will slightly reduce the opacity on hover, you can add more styles if needed */
+    }
+}

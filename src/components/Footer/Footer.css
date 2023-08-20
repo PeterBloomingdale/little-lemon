@@ -1,25 +1,65 @@
-.footer {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    padding: 20px;
+/* Define grid for large screens (default) */
+footer {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    padding: 1rem 0;
     background-color: #f5f5f5;
 }
 
-.footer-logo {
-    width: 100px;
-    margin-right: 20px;
+.footer-column-logo {
+    grid-column: 3 / span 2; /* start at 3rd column and span 2 columns */
+    padding: 10px;
+    align-self: center;
 }
 
 .footer-column {
-    flex: 1;
+    grid-column: span 2; /* By default, each column spans 2 of the 12 columns */
     padding: 10px;
 }
 
-.footer-column h3 {
-    margin-top: 0;
+
+footer a, footer p {
+    text-decoration: none;
+    color: #000;
+    font-size: 0.8rem;
+    letter-spacing: 1px;
+    transition: all 0.3s ease-in-out;
+    font-family: 'Karla';
 }
 
-.footer-column a, .footer-column p {
-    line-height: 1.5;
+footer h3 {
+    color: #000;
+    font-weight: bold;
+    font-family: 'Markazi Text', serif;  /* Assuming you've imported or linked to the Markazi Text font in your project */
+    font-size: 1rem;  /* 32px equivalent in rem */
+}
+
+footer ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+
+/* Adjustments for smaller screens */
+@media (max-width: 1024px) {
+    footer {
+        grid-template-columns: repeat(8, 1fr); /* Define 8 columns for smaller screens */
+        padding: 1rem; /* Adjusted padding for smaller screens */
+    }
+    .footer-column-logo {
+        grid-column: 1 / span 2; /* Place the logo at the beginning on smaller screens */
+    }
+    .footer-column-logo img {
+       width: 7rem;
+    }
+    .footer-column {
+        grid-column: span 2; /* Each column still spans 2 columns. Adjust if needed. */
+    }
+    footer a, footer p {
+        font-size: 0.6rem;
+    }
+    footer h3 {
+        font-size: 0.8rem;  /* 32px equivalent in rem */
+    }
+
 }

@@ -1,0 +1,83 @@
+#home {
+    background-color: #495E57;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    padding: 1rem 1rem;
+}
+
+#home h1 {
+    grid-column: 3 / 7;
+    grid-row: 1;
+    color: #F4CE14;
+    font-weight: bold;
+    font-family: 'Markazi Text', serif;
+    font-size: 3rem;
+}
+
+#home h2 {
+    grid-column: 3 / 6;
+    grid-row: 2;
+    color: #FFF;
+    font-weight: bold;
+    font-family: 'Markazi Text', serif;
+    font-size: 2rem;
+}
+
+#home Button {
+    grid-column: 3 / 6;
+    grid-row: 5 / 5;
+}
+
+#home p {
+    grid-column: 3 / 6;
+    grid-row: 3 / 5;
+    color: #FFF;
+    font-weight: medium;
+    font-family: 'Karla', sans-serif;
+    font-size: 1rem;
+}
+
+#home img {
+    grid-column: 7 / 11;
+    grid-row: 1 / 8;
+    width: 100%;
+    height: auto;
+    border-radius: 20px;  /* adjust this value for more or less rounding */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  /* horizontal offset, vertical offset, blur radius, shadow color */
+}
+
+
+
+
+@media (max-width: 1024px) {
+    #home {
+        grid-template-columns: repeat(8, 1fr);
+    }
+
+    #home Button {
+        grid-column: 1 / span 4;  /* Start at the 3rd column and span 6 columns */
+        grid-row: 5 / 5;
+    }
+
+    #home h1 {
+        font-size: 2rem;  /* 40px equivalent in rem */
+        grid-column: 1 / span 4;  /* Start at the 3rd column and span 6 columns */
+
+    }
+
+    #home h2 {
+        font-size: 1.25rem;  /* 24px equivalent in rem */
+        grid-column: 1 / span 4;  /* Start at the 3rd column and span 6 columns */
+
+    }
+
+    #home p {
+        grid-column: 1 / span 3;  /* Start at the 3rd column and span 3 columns */
+        font-size: 0.8rem;  /* 16px equivalent in rem */
+    }
+    #home img {
+        grid-column: 5 / 11;
+        grid-row: 1 / 8;
+    }
+}
