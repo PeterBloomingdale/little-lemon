@@ -1,0 +1,27 @@
+nav {
+    grid-column: 5 / 11;
+}
+
+nav ul {
+    display: grid;
+    list-style-type: none;
+    grid-template-columns: repeat(6, auto);
+    grid-gap: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    transition: all 0.3s ease-in-out;
+    font-family: 'Karla';
+}
+
+/* For smaller screens (less than or equal to 1024px) */
+@media (max-width: 1024px) {
+    nav {
+        grid-column: 3/9;  /* Adjust this according to your design preference for smaller screens */
+    }
+}

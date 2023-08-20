@@ -1,0 +1,20 @@
+header {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr); /* logo takes the space it needs, nav takes the next 10 columns */
+    align-items: center; /* to vertically align the logo and nav */
+    margin-top: 32px;
+    margin-bottom: 24px;
+}
+
+header img {
+    grid-column: 3/5; /* to span the logo across 1 column */
+}
+
+@media (max-width: 1024px) {
+    header {
+        grid-template-columns: repeat(8, 1fr);
+    }
+    header img {
+        grid-column: 1/3;
+    }
+}
