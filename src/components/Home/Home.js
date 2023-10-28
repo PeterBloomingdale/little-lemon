@@ -18,7 +18,7 @@ function Home() {
       <h1>Little Lemon</h1>
       <h2>Chicago</h2>
       <p>We are a family owned Mediterranean restaurant, focused on traditional recipes served with a modern twist</p>
-      <Button text="Reserve a Table" onClick={navigateToReservations}/>
+      <Button ariaLabel="Navigate to reservations page" text="Reserve a Table" onClick={navigateToReservations}/>
       <img src={food} alt="Little Lemon Food"></img>
     </section>
   );

@@ -5,6 +5,19 @@ import BookingForm from './BookingForm';
 // Given: The BookingForm component receives available times as a prop.
 const mockAvailableTimes = ["12:00", "13:00", "14:00"];  // You can adjust these mock times as per your app's logic.
 
+test('Guests input field has correct attributes', () => {
+    render(
+        <Router>
+            <BookingForm availableTimes={[]} />
+        </Router>
+    );
+
+    const guestsInput = screen.getByLabelText("Number of guests");
+    expect(guestsInput).toHaveAttribute("min", "1");
+    expect(guestsInput).toHaveAttribute("max", "10");
+    expect(guestsInput).toHaveAttribute("placeholder", "10 guests max");
+});
+
 test('Renders the BookingForm heading', () => {
     const mockDispatch = jest.fn(); // This creates a mock function
 
