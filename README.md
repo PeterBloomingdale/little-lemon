@@ -1,7 +1,3 @@
-Certainly! Here's a sample README file for the "Little Lemon Capstone Project" for the "Meta Frontend Developer Course":
-
----
-
 # Little Lemon Capstone Project
 
 Welcome to the repository of the Little Lemon Capstone Project, a culmination of learning and skills gained during the Meta Frontend Developer Course.
