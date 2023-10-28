@@ -36,12 +36,12 @@ And various other libraries and tools.
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/your-username/little-lemon-capstone.git
+git clone https://github.com/PeterBloomingdale/little-lemon.git
 ```
 
 2. Navigate to the project directory:
 ```bash
-cd little-lemon-capstone
+cd little-lemon
 ```
 
 3. Install the dependencies:
