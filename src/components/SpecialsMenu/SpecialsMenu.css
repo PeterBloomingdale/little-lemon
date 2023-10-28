@@ -1,0 +1,149 @@
+.special-menu-wrap {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin: 40px 0;
+}
+
+.special-menu-wrap .heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 0 30px 0;
+}
+
+.special-menu-wrap .heading .title {
+  font-family: PRIMARY-FONT-PLACEHOLDER;
+  font-size: 42px;
+  line-height: 1.2;
+  font-weight: 500;
+  color: BASE-COLOR-PLACEHOLDER;
+  text-transform: capitalize;
+}
+
+.special-menu-wrap .heading .cta {
+  display: inline-block;
+  height: 50px;
+  background-color: #F4CE14;
+  font-family: SEC-FONT-PLACEHOLDER;
+  padding: 0 20px;
+  max-width: 150px;
+  width: 100%;
+  font-size: 16px;
+  line-height: 50px;
+  font-weight: 700;
+  color: black;
+  border-radius: 25px;
+  border: none;
+  text-align: center;
+  outline: none;
+  overflow: hidden;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.special-menu-wrap .heading .cta:hover {
+  background-color: BASE-COLOR-PLACEHOLDER;
+  color: ACCENT-COLOR-PLACEHOLDER;
+  transition: background 0.2s;
+}
+
+.special-menu-wrap .flex-items {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.special-menu-wrap .flex-items .flex-item {
+  min-width: 150px;
+  max-width: 250px;
+  background-color: rgb(201, 243, 240);
+  border-radius: 18px;
+  overflow: hidden;
+}
+
+.special-menu-wrap .flex-items .flex-item .img-wrap {
+  width: 100%;
+  height: 230px;
+  overflow: hidden;
+}
+
+.special-menu-wrap .flex-items .flex-item .img-wrap:hover img {
+  transform: scale(1.1);
+  transition: transform 0.3s;
+}
+
+.special-menu-wrap .flex-items .flex-item .img-wrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s;
+}
+
+.special-menu-wrap .flex-items .flex-item .content-wrap {
+  padding: 30px 30px;
+  font-family: SEC-FONT-PLACEHOLDER;
+  line-height: 1.2;
+}
+
+.special-menu-wrap .flex-items .flex-item .content-wrap .title {
+  font-size: 24px;
+  color: black;
+}
+
+.special-menu-wrap .flex-items .flex-item .content-wrap .price {
+  font-family: PRIMARY-FONT-PLACEHOLDER;
+  font-size: 24px;
+  color: SECONDARY-COLOR-PLACEHOLDER;
+}
+
+.special-menu-wrap .flex-items .flex-item .content-wrap .desc {
+  font-size: 16px;
+  line-height: 1.4;
+  color: rgb(47, 40, 40);
+}
+
+.special-menu-wrap .flex-items .flex-item .content-wrap .bottom-text {
+  display: flex;
+  align-items: center;
+  justify-self: flex-start;
+  margin: 20px 0 0 0;
+  max-width: 170px;
+  font-size: 18px;
+  font-weight: 700;
+  color: black;
+  cursor: pointer;
+}
+
+.special-menu-wrap .flex-items .flex-item .content-wrap .bottom-text:hover i {
+  transform: translateX(10px);
+  transition: transform 0.3s;
+}
+
+.special-menu-wrap .flex-items .flex-item .content-wrap .bottom-text:hover i svg path {
+  fill: DARK-PLACEHOLDER;
+}
+
+.special-menu-wrap .flex-items .flex-item .content-wrap .bottom-text i {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  padding: 0 0 0 10px;
+  transition: transform 0.3s;
+}
+
+.special-menu-wrap .flex-items .flex-item .content-wrap .bottom-text i svg {
+  width: 100%;
+  height: 100%;
+}
+
+.special-menu-wrap .flex-items .flex-item .content-wrap .bottom-text i svg path {
+  fill: BASE-COLOR-PLACEHOLDER;
+}
+
+@media (max-width: 1000px) {
+  .special-menu-wrap .flex-items {
+    flex-wrap: wrap;
+  }
+}
